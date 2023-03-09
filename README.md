@@ -37,8 +37,8 @@ t.start()
 t.stop()
 print(t.rtimes()) 
 # [5.516]
-# previous recorded times are stored in t.prev_recorded times
-print(t.prev_recorded_times)
+# previous recorded times are stored in t.prev__recorded _times
+print(t.prev_times)
 [[2.8563294369996584, 5.068209224999919, 22.224131080000006]]
 ```
 
