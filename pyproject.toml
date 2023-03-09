@@ -18,9 +18,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent"
 ]
+
 keywords = ["timer", "timing"]
 dependencies = [
-    "typing-extensions; python_version < 3.11"
+    "typing_extensions"
 ]
 requires-python = ">=3.8"
 
@@ -29,6 +30,9 @@ dev = ["black", "pylint", "pip-tools", "pytest"]
 
 [project.urls]
 Homepage = "https://github.com/MatthewBaggins/thyming"
+
+[options.packages.find]
+where = "src"
 
 [tool.pytest.ini_options]
 log_cli = true
