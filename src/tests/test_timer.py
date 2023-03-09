@@ -11,7 +11,7 @@ def test_100ms():
         t.start()
         t.sleep(.1)
         t.stop()
-    assert all(.1 < time < .11 for time in t.recorded_times)
+    assert all(.1 < time < .11 for time in t.times)
 
 class Test_exceptions:
     def test_TimerAlreadyRunningError(self):
