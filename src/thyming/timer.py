@@ -129,6 +129,17 @@ class Timer:
     def rtimes(self, digits: int = 4) -> list[float]:
         """Rounded recorded times"""
         return [round(t, digits) for t in self.times]
+    
+    def diffs(self, times: Optional[list[float]] = None) -> list[float]:
+        """Get differences between measured times.
+        By default uses current (most recently recorded) times 
+        but you can also pass to it another list of increasing floats, 
+        e.g. one of `.prev_times` lists.
+        """
+        if times is None:
+            times = self.times
+            assert times, "Empty list of times!"
+        return [next_time - prev_time for prev_time, next_time in zip([0, *times], times)]
 
     #################
     #    Private    #
