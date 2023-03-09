@@ -69,3 +69,7 @@ t = Timer().start()
 sleep(1)
 t.measure() # INFO:root:Elapsed time: 1.0011 seconds.
 ```
+
+## Links
+
+- [PyPi](https://pypi.org/project/thyming/0.1.0/)
