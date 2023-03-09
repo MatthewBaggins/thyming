@@ -3,7 +3,7 @@ import logging
 
 import pytest
 
-from thyming.timer import NoLoggerError, Timer, TimerAlreadyRunningError, TimerNotRunningError, Timestamp
+from thyming.timer import Timer, TimerAlreadyRunningError, TimerNotRunningError, DefaultMessage
 
 def test_100ms():
     t = Timer()
