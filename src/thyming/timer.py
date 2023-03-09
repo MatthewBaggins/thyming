@@ -8,6 +8,7 @@ import logging
 from time import perf_counter
 from types import TracebackType
 from typing import Callable, Literal, Optional, Union
+
 from typing_extensions import Self
 
 ###############

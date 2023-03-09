@@ -5,6 +5,31 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "thyming"
+version = "0.0.1b0"
+description = "Custom timer"
+readme = "README.md"
+authors = [{ name = "MatthewBaggins", email = "bagginsmatthew@gmail.com"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+keywords = ["timer", "timing"]
+dependencies = [
+    "typing-extensions; python_version < 3.11"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "pylint", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/MatthewBaggins/thyming"
+
 [tool.pytest.ini_options]
 log_cli = true
 log_cli_level = "INFO"
